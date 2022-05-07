@@ -6,7 +6,7 @@ const mongodb = require("mongodb");
 const mongoose = require("mongoose");
 
 
-mongoose.connect("mongodb+srv://admin:QWASpolk123@cluster0.sejss.mongodb.net/blogDB");
+mongoose.connect(process.env.MONGO_DB_URL);
 
 
 const postSchema = {
